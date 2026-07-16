@@ -141,4 +141,5 @@ data/*.parquet
 
 # Reports
 reports/figures/
-reports/outputs/
+reports/outputs/*
+!reports/outputs/change_point_results.json

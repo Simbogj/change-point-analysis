@@ -33,7 +33,7 @@ def load_brent_prices(filepath: str) -> pd.DataFrame:
     """
     try:
         df = pd.read_csv(filepath)
-        df['Date'] = pd.to_datetime(df['Date'], format='%d-%b-%y')
+        df['Date'] = pd.to_datetime(df['Date'], format='mixed')
         df = df.sort_values('Date').reset_index(drop=True)
         return df
     except FileNotFoundError:
