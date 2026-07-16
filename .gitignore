@@ -137,6 +137,7 @@ data/*.csv
 data/*.xlsx
 data/*.parquet
 !data/README.md
+!data/events.csv
 
 # Reports
 reports/figures/
